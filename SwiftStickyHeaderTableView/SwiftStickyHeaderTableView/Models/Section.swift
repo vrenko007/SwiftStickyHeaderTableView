@@ -13,6 +13,10 @@ class Section {
     var rows = [Row]()
     var footer: String?
 
+  init() {
+    
+  }
+
     init(json: [String : Any]) {
         header = json["header"] as? String
         if let items = json["rows"] as? [[String : Any]] {
